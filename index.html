@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!-- my CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Untitled Inc</title>
+    </head>
+
+    <body>
+      <!-- navbar -->
+
+      <div class="navbar-fixed">
+        <nav class="deep-purple darken-4">
+          <div class="container">
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Untitled.Inc</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="">About Us</a></li>
+              <li><a href="">Clients</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Profiles</a></li>
+              <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+      
+
+    <!-- sidenav -->
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="">About Us</a></li>
+      <li><a href="">Clients</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Profiles</a></li>
+      <li><a href="">Contact Us</a></li>    
+    </ul>
+
+    <!-- slider -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="img/slider/17.jpg">
+          <div class="caption left-align">
+            <h3>This is our clothes market!</h3>
+            <h5 class="light grey-text text-lighten-3">Our best stuff created.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider/15.jpg">
+          <div class="caption center-align">
+            <h3>This is our clothes market!</h3>
+            <h5 class="light grey-text text-lighten-3">Our best stuff created.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider/16.jpg">
+          <div class="caption right-align">
+            <h3>This is our clothes market!</h3>
+            <h5 class="light grey-text text-lighten-3">Our best stuff created.</h5>
+          </div>
+        </li>
+        <li>
+          <img src="img/slider/11.jpg">
+          <div class="caption center-align">
+            <h3>This is our clothes market!</h3>
+            <h5 class="light grey-text text-lighten-3">Our best stuff created.</h5>
+          </div>
+        </li>
+      </ul>
+      </div>
+
+      <!-- about us -->
+      <section id="about" class="section scrollspy">
+        <div class="container">
+          <div class="row">
+            <h3 class="center deep-purple-text text-darken-4">About us</h3>
+            <div class="col m6 light">
+              <h5>We Are Professional</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint exercitationem enim molestiae distinctio rem incidunt vitae, aut dignissimos soluta sit sapiente quo ullam aliquam, dolorem accusantium facilis harum vero eius.</p>
+            </div>
+            <div class="col m6 light">
+              <p>Store Development</p>
+              <div class="progress">
+                <div class="determinate deep-purple darken-2" style="width: 60%"></div>
+            </div>
+            <p>Customer Services</p>
+            <div class="progress">
+              <div class="determinate deep-purple darken-2" style="width: 95%"></div>
+          </div>
+          <p>Clothes Production</p>
+          <div class="progress">
+            <div class="determinate deep-purple darken-2" style="width: 70%"></div>
+        </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- clients -->
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/slider/13.png"></div>
+
+        <div class="container clients">
+          <h3 class="center light white-text">Our clients</h3>
+          <div class="row">
+            <div class="col m6 sm12 center">
+              <img src="img/clients/shopee.png" alt="">
+            </div>
+            <div class="col m6 sm12 center">
+              <img src="img/clients/ig.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider = document.querySelectorAll('.slider');
+        M.Slider.init(slider, {
+          indicators : false,
+          height : 450,
+          transition: 500,
+          interval : 5000
+        });
+
+        const parallax = document.querySelectorAll('.parallax');
+        M.Parallax.init(parallax);
+
+      </script>
+    </body>
+  </html>
+        
